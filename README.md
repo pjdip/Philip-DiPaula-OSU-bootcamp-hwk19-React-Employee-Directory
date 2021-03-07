@@ -69,5 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+api docs:
 https://randomuser.me/documentation#format
+
+react-table:
+https://react-table.tanstack.com/docs/overview
+https://www.freakyjolly.com/react-table-tutorial/
+https://betterprogramming.pub/an-introduction-to-react-table-6ebd34d8059e
+
+useTable: https://react-table.tanstack.com/docs/api/useTable
