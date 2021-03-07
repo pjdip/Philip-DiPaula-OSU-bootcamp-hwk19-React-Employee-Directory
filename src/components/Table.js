@@ -23,7 +23,10 @@ function Table() {
         },
         {
             Header: "DOB",
-            accessor: "dob.date"
+            accessor: "dob.date",
+            Cell: (row) => {
+                return <div>{new Date(row.value).toLocaleDateString()}</div>
+            }
         },
         {
             Header: "City",
@@ -44,12 +47,10 @@ function Table() {
     ]
 
     const data = employees;
-    console.log(data);
 
     const {
         getTableProps,
         getTableBodyProps,
-        getCellProps,
         headerGroups,
         rows,
         prepareRow
@@ -86,7 +87,5 @@ function Table() {
         </table>
     )
 };
-
-/* {...getCellProps()} */
 
 export default Table;
