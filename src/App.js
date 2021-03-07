@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Table from "../src/components/Table";
+import SortingTable from "../src/components/Table";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Table />
+      <SortingTable />
     </div>
   );
 }

@@ -4,49 +4,7 @@ import employees from "../utils/employees.json";
 import { useTable, useFilters, useGlobalFilter, useAsyncDebounce, useSortBy, usePagination } from "react-table";
 import * as Rxn from "react-table";
 
-function Table() {
-    const columns = [
-        {
-            Header: "",
-            accessor: "picture.thumbnail",
-            Cell: (row) => {
-                return <img alt="employee picture" src={row.value}/>
-            }
-        },
-        {
-            Header: "First",
-            accessor: "name.first"
-        },
-        {
-            Header: "Last",
-            accessor: "name.last"
-        },
-        {
-            Header: "DOB",
-            accessor: "dob.date",
-            Cell: (row) => {
-                return <div>{new Date(row.value).toLocaleDateString()}</div>
-            }
-        },
-        {
-            Header: "City",
-            accessor: "location.city"
-        },
-        {
-            Header: "State",
-            accessor: "location.state"
-        },
-        {
-            Header: "Email",
-            accessor: "email"
-        },
-        {
-            Header: "Cell",
-            accessor: "cell"
-        },
-    ]
-
-    const data = employees;
+function Table({ columns, data }) {
 
     const {
         getTableProps,
@@ -54,10 +12,13 @@ function Table() {
         headerGroups,
         rows,
         prepareRow
-    } = useTable({
-        columns,
-        data
-    })
+    } = useTable(
+        {
+            columns,
+            data
+        },
+        useSortBy
+    )
 
     return (
         <table className="table" {...getTableProps()}>
@@ -65,8 +26,16 @@ function Table() {
                 {headerGroups.map(headerGroup => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
                         {headerGroup.headers.map(column => (
-                            <th {...column.getHeaderProps()}>
+                            <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                                 {column.render('Header')}
+                                <span>
+                                    {column.isSorted
+                                        ? column.isSortedDesc
+                                            ? ' 🔽'
+                                            : ' 🔼'
+                                        : ''
+                                    }
+                                </span>
                             </th>
                         ))}
                     </tr>
@@ -88,4 +57,56 @@ function Table() {
     )
 };
 
-export default Table;
+function SortingTable() {
+    const columns = React.useMemo(
+        () => [
+            {
+                Header: "",
+                accessor: "picture.thumbnail",
+                Cell: (row) => {
+                    return <img alt="employee picture" src={row.value}/>
+                }
+            },
+            {
+                Header: "First",
+                accessor: "name.first"
+            },
+            {
+                Header: "Last",
+                accessor: "name.last"
+            },
+            {
+                Header: "DOB",
+                accessor: "dob.date",
+                Cell: (row) => {
+                    return <div>{new Date(row.value).toLocaleDateString()}</div>
+                }
+            },
+            {
+                Header: "City",
+                accessor: "location.city"
+            },
+            {
+                Header: "State",
+                accessor: "location.state"
+            },
+            {
+                Header: "Email",
+                accessor: "email"
+            },
+            {
+                Header: "Cell",
+                accessor: "cell"
+            },
+        ],
+        []
+    );
+
+    const data = employees;
+
+    return (
+        <Table columns={columns} data={data} />
+    )
+}
+
+export default SortingTable;
