@@ -1,8 +1,25 @@
 # Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## These are the files for the homework assignment associated with section 19 of the OSU Web Development Bootcamp
 
-## Available Scripts
+* Here is a link to the [github](https://github.com/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
+* Here is a link to the deployed [application]()
+
+The goal of this assignment was to build an employee directory app using [React](https://reactjs.org/). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In order to most effectively manage component state and respond to user events, I used the [react-table](https://react-table.tanstack.com/) library. This made it easy to add filtering, sorting, and pagination to the employee table. Random employee data was generated from the [Random User API](https://randomuser.me/).
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [Badges](#badges)
+* [License](#license)
+
+## Installation
+
+Installation requirements include node.js. Dependencies can be loaded by running 'npm install' from the main directory, once the repo has been cloned.
+
+## Usage
+
+
 
 In the project directory, you can run:
 
@@ -13,11 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
