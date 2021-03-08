@@ -1,7 +1,7 @@
 /* import axios from "axios"; */
 const axios = require('axios');
 const fs = require('fs');
-const url = "https://randomuser.me/api/?results=50&nat=us&inc=picture,name,dob,location,cell,email";
+const url = "https://randomuser.me/api/?results=100&nat=us&inc=picture,name,dob,location,cell,email";
 
 const data = [];
 const path = "employees.json";
