@@ -4,6 +4,7 @@ import employees from "../utils/employees.json";
 import { useTable, useGlobalFilter, useSortBy, usePagination } from "react-table";
 import GlobalFilter from "../components/GlobalFilter";
 import Pagination from "../components/Pagination";
+import TableBody from "../components/TableBody";
 
 function Table({ columns, data }) {
 
@@ -62,18 +63,11 @@ function Table({ columns, data }) {
                         </tr>
                     ))}
                 </thead>
-                <tbody {...getTableBodyProps()}>
-                    {page.map((row, i) => {
-                        prepareRow(row)
-                        return (
-                            <tr {...row.getRowProps()}>
-                                {row.cells.map(cell => {
-                                    return <td>{cell.render('Cell')}</td>
-                                })}
-                            </tr>
-                        )
-                    })}
-                </tbody>
+                <TableBody
+                    getTableBodyProps={getTableBodyProps}
+                    prepareRow={prepareRow}
+                    page={page}
+                />
             </table>
             <Pagination
                 state={state}
@@ -86,53 +80,6 @@ function Table({ columns, data }) {
                 previousPage={previousPage}
                 setPageSize={setPageSize}
             />
-{/*             <ul className="pagination">
-                <li className="page-item" onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-                    <button className="page-link">First</button>
-                </li>
-                <li className="page-item" onClick={() => previousPage()} disabled={!canPreviousPage}>
-                    <button className="page-link">{'<'}</button>
-                </li>
-                <li className="page-item" onClick={() => nextPage()} disabled={!canNextPage}>
-                    <button className="page-link">{'>'}</button>
-                </li>
-                <li className="page-item" onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-                    <button className="page-link">Last</button>
-                </li>
-                <li>
-                    <button className="page-link">
-                        Page{' '} {state.pageIndex + 1} of {pageOptions.length} {' '}
-                    </button>
-                </li>
-                <li>
-                    <button className="page-link">
-                        <input
-                            className="form-control"
-                            type="number"
-                            defaultValue={state.pageIndex + 1}
-                            onChange={event => {
-                                const page = event.target.value ? Number(event.target.value) - 1 : 0
-                                gotoPage(page)
-                            }}
-                            style={{ width: '100px', height: '20px' }}
-                        />
-                    </button>
-                </li>{' '}
-                <select
-                    className="form-control"
-                    value={state.pageSize}
-                    onChange={event => {
-                        setPageSize(Number(event.target.value))
-                    }}
-                    style={{ width: '120px', height: '38px' }}
-                >
-                    {[5, 10, 20, 30, 40, 50].map(pageSize => (
-                        <option key={pageSize} value={pageSize}>
-                            Show {pageSize}
-                        </option>
-                    ))}
-                </select>
-            </ul> */}
         </div>
     )
 };
