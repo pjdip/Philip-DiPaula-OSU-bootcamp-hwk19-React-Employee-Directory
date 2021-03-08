@@ -3,7 +3,7 @@
 ## These are the files for the homework assignment associated with section 19 of the OSU Web Development Bootcamp
 
 * Here is a link to the [github](https://github.com/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
-* Here is a link to the deployed [application]()
+* Here is a link to the deployed [application](https://pjdip.github.io/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/)
 
 The goal of this assignment was to build an employee directory app using [React](https://reactjs.org/). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In order to most effectively manage component state and respond to user events, I used the [react-table](https://react-table.tanstack.com/) library. This made it easy to add filtering, sorting, and pagination to the employee table. Random employee data was generated from the [Random User API](https://randomuser.me/).
 
