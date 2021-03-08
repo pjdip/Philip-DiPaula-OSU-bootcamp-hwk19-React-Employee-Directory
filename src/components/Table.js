@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import employees from "../utils/employees.json";
 import { useTable, useGlobalFilter, useSortBy, usePagination } from "react-table";
 import GlobalFilter from "../components/GlobalFilter";
+import Pagination from "../components/Pagination";
 
 function Table({ columns, data }) {
 
@@ -74,7 +75,18 @@ function Table({ columns, data }) {
                     })}
                 </tbody>
             </table>
-            <ul className="pagination">
+            <Pagination
+                state={state}
+                canPreviousPage={canPreviousPage}
+                canNextPage={canNextPage}
+                pageOptions={pageOptions}
+                pageCount={pageCount}
+                gotoPage={gotoPage}
+                nextPage={nextPage}
+                previousPage={previousPage}
+                setPageSize={setPageSize}
+            />
+{/*             <ul className="pagination">
                 <li className="page-item" onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
                     <button className="page-link">First</button>
                 </li>
@@ -120,7 +132,7 @@ function Table({ columns, data }) {
                         </option>
                     ))}
                 </select>
-            </ul>
+            </ul> */}
         </div>
     )
 };
