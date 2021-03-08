@@ -16,7 +16,7 @@ function Pagination({
     return(
         <ul className="pagination">
             <li className="page-item" onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-                <button className="page-link">First</button>
+                <button className="page-link">{'<<'}</button>
             </li>
             <li className="page-item" onClick={() => previousPage()} disabled={!canPreviousPage}>
                 <button className="page-link">{'<'}</button>
@@ -25,7 +25,7 @@ function Pagination({
                 <button className="page-link">{'>'}</button>
             </li>
             <li className="page-item" onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-                <button className="page-link">Last</button>
+                <button className="page-link">{'>>'}</button>
             </li>
             <li>
                 <button className="page-link">
