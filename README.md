@@ -19,6 +19,18 @@ Installation requirements include node.js. Dependencies can be loaded by running
 
 ## Usage
 
+This is a one page app. Upon loading, you will be presented with a table that displays information about employees. You can click any of the table headers to sort the employees by that category. Type into the search form in order to filter for all properties. For example, typing "Washington" will filter for all employees for which that term appears in their info (even if it is apart of their name instead of location). At the bottom of the table is a pagination interface that is intuitive.
+
+Here are some screenshots:
+
+![Main](public/images/Main.png)
+
+
+![Filter](public/images/Filter.png)
+
+
+![Sort](public/images/sort.png)
+
 
 
 In the project directory, you can run:
@@ -51,45 +63,41 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Thanks to React:
+* [website](https://reactjs.org/)
+* [docs](https://create-react-app.dev/)
+* [deployment](https://create-react-app.dev/docs/deployment/#github-pages)
 
-### Analyzing the Bundle Size
+Thanks to [Random User API](https://randomuser.me/) [docs](https://randomuser.me/documentation)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Special Thanks to React-Table:
+* [npm](https://www.npmjs.com/package/react-table)
+* [docs](https://react-table.tanstack.com/docs/overview)
+* [useTable](https://react-table.tanstack.com/docs/api/useTable)
+* [useSortBy](https://react-table.tanstack.com/docs/api/useSortBy)
+* [useGlobalFilter](https://react-table.tanstack.com/docs/api/useGlobalFilter)
+* [usePagination](https://react-table.tanstack.com/docs/api/usePagination)
 
-### Making a Progressive Web App
+Special Thanks to [ChilledCow](https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow) for providing chill lofi beats to code to
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Badges
 
-### Advanced Configuration
+![languages](https://img.shields.io/github/languages/count/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
+![top-language](https://img.shields.io/github/languages/top/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
+![repo-size](https://img.shields.io/github/repo-size/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
+![open-issues](https://img.shields.io/github/issues-raw/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
+![last-commit](https://img.shields.io/github/last-commit/pjdip/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+Licensed under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-api docs:
-https://randomuser.me/documentation#format
-
-react-table:
-https://www.npmjs.com/package/react-table
-https://react-table.tanstack.com/docs/overview
-
-useTable: https://react-table.tanstack.com/docs/api/useTable
-useSortBy: https://react-table.tanstack.com/docs/api/useSortBy
-useGlobalFilter: https://react-table.tanstack.com/docs/api/useGlobalFilter
-usePagination: https://react-table.tanstack.com/docs/api/usePagination
-
+---
