@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/main.b487eb9c.chunk.js",
+    "main.js.map": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/main.b487eb9c.chunk.js.map",
+    "runtime-main.js": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/runtime-main.33a621bd.js",
+    "runtime-main.js.map": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/runtime-main.33a621bd.js.map",
+    "static/css/2.150d169a.chunk.css": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/css/2.150d169a.chunk.css",
+    "static/js/2.7e22c216.chunk.js": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/2.7e22c216.chunk.js",
+    "static/js/2.7e22c216.chunk.js.map": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/2.7e22c216.chunk.js.map",
+    "index.html": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.8c8b27cf.chunk.css.map": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.7e22c216.chunk.js.LICENSE.txt": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/js/2.7e22c216.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Philip-DiPaula-OSU-bootcamp-hwk19-React-Employee-Directory/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33a621bd.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.7e22c216.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.b487eb9c.chunk.js"
+  ]
+}
